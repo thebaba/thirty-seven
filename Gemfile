@@ -17,5 +17,6 @@ end
 group :development, :test do
   gem 'byebug', '~> 6.0.0'
   gem 'web-console', '~> 2.0'
+  gem 'rspec-rails', '~> 3.0'
 end
 
