@@ -6,14 +6,14 @@
 </p>
 
 <p>
-  <strong>Body:</strong>
+  <strong>Body:</strong><br/>
   <%= @factoid.body %>
 </p>
 
 <p>
-  <strong>Note:</strong>
+  <strong>Note:</strong><br/>
   <%= @factoid.note %>
 </p>
 
-<%= link_to 'Edit', edit_factoid_path(@factoid) %> |
-<%= link_to 'Back', factoids_path %>
+<%= link_to 'Edit', edit_factoid_path(@factoid), :class => 'btn btn-primary' %>
+<%= link_to 'Back', factoids_path, :class => 'btn btn-info'  %>

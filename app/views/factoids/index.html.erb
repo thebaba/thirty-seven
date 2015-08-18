@@ -8,7 +8,7 @@
       <th>Summary</th>
       <th>Body</th>
       <th>Note</th>
-      <th colspan="3"></th>
+      <th></th>
     </tr>
   </thead>
 
@@ -18,9 +18,9 @@
         <td><%= factoid.summary %></td>
         <td><%= factoid.body %></td>
         <td><%= factoid.note %></td>
-        <td><%= link_to 'Show', factoid %></td>
-        <td><%= link_to 'Edit', edit_factoid_path(factoid) %></td>
-        <td><%= link_to 'Destroy', factoid, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', factoid, :class => 'btn btn-info' %>
+        <%= link_to 'Edit', edit_factoid_path(factoid), :class => 'btn btn-primary' %>
+        <%= link_to 'Destroy', factoid, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-warning' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,6 @@
 
 <br>
 
-<%= link_to 'New Factoid', new_factoid_path %>
+<%= link_to 'New Factoid', new_factoid_path, :class => 'btn btn-primary' %>
+
+
