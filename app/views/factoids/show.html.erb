@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @factoid.summary %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @factoid.body %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @factoid.note %>
+</p>
+
+<%= link_to 'Edit', edit_factoid_path(@factoid) %> |
+<%= link_to 'Back', factoids_path %>
