@@ -12,6 +12,7 @@ gem 'turbolinks', '~> 2.5.3'
 
 
 group :development do
+  gem 'pry', '~> 0.10'
   gem 'nokogiri', '~> 1.6.6'
   gem 'rails_layout', '~> 1.0'
 end
