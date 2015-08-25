@@ -12,13 +12,14 @@ gem 'turbolinks', '~> 2.5.3'
 
 
 group :development do
-  gem 'pry', '~> 0.10'
   gem 'nokogiri', '~> 1.6.6'
   gem 'rails_layout', '~> 1.0'
 end
 
 group :development, :test do
-  gem 'byebug', '~> 6.0.0'
+  gem 'byebug', '~> 5.0.0'
+  gem 'pry', '~> 0.10'
+  gem 'pry-byebug', '~> 3.2.0'
   gem 'web-console', '~> 2.0'
   gem 'rspec-rails', '~> 3.0'
 end
